@@ -27,7 +27,7 @@ describe('lfs', () => {
         } catch (err) {
             error = err;
         }
-        expect(error.message).to.equal('Requires region and bucket for initialization');
+        expect(error.message).to.equal('Requires bucket for initialization');
     });
 
     it('Saves file', async () => {
